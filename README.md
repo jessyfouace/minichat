@@ -1,4 +1,4 @@
-# DistrictBasket
+# MiniChat
 Project to create a minichat in PHP.
 
 ## Contributing
