@@ -1,5 +1,5 @@
 # DistrictBasket
-Project to create an e-commerce basketball site to train in PHP.
+Project to create a minichat in PHP.
 
 ## Contributing
 1. Fork it!
@@ -10,12 +10,8 @@ Project to create an e-commerce basketball site to train in PHP.
 
 ## Restriction
 
-We need to create a group basketball trade site with product listings and a detailed automatic page.
+We need to create a minichat in PHP.
 
 ## Creators
 
-Amélie, Jessy
-
-## Trello
-
-https://trello.com/b/kKnNwukB/projet-basket-am%C3%A9lie-jessy
+Jessy
