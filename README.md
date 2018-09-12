@@ -11,6 +11,7 @@ Project to create a minichat in PHP.
 ## Restriction
 
 We need to create a minichat in PHP.
+/!\ To connect to your database, rename configexample.php to config.php and fill in the line thanks to the comment. /!\
 
 ## Creators
 
