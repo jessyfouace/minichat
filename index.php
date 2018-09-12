@@ -29,7 +29,7 @@
   <?php
   while ($chat = $reponse->fetch())
   {
-    echo "<strong>" . $chat['pseudo'] . "</strong>" . ": " . $chat['message'] . "<br>";
+    echo "<strong>" . htmlspecialchars($chat['pseudo']) . "</strong>" . ": " . htmlspecialchars($chat['message']) . "<br>";
   }
   ?>
 
