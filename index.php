@@ -1,3 +1,4 @@
+<?php require("config.php"); ?>
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -15,10 +16,22 @@
 
 <body>
 
+  <form class="col-12 text-center p-0 m-0 pt-5" action="minichat_post.php" method="post">
+    <label for="">Pseudo:</label>
+    <input type="text" name="pseudo" value="" required><br>
+    <label for="">Message:</label>
+    <input type="text" name="message" value="" required><br>
+    <input type="submit" name="validate" value="Valider">
+  </form>
 
+  <?php $reponse = $bdd->query('SELECT * FROM chat ORDER BY id DESC LIMIT 10');?>
 
-
-
+  <?php
+  while ($chat = $reponse->fetch())
+  {
+    echo $chat['pseudo'] . ": " . $chat['message'] . "<br>";
+  }
+  ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
