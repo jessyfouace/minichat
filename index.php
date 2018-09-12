@@ -31,6 +31,7 @@
   {
     echo "<strong>" . htmlspecialchars($chat['pseudo']) . "</strong>" . ": " . htmlspecialchars($chat['message']) . "<br>";
   }
+  $reponse->closeCursor();
   ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
